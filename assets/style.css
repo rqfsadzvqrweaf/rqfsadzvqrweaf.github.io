@@ -491,7 +491,7 @@ header .header-navigation-nav {
   display: none;
 }
 
-main{
+main {
   margin-top: 55px;
 }
 
@@ -506,8 +506,37 @@ header {
   margin-bottom: 55px;
 }
 
-@media screen and (max-width: 992px) {
+header > section > .footer-info-buttons {
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3e4348;
+  justify-content: center;
+  display: none;
+}
+header > section > .footer-info-buttons > a {
+  margin-bottom: 2rem;
+}
+header > section > .footer-info-buttons > button {
+  padding: 1rem;
+  border: 0;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background: none;
+}
+header > section > .footer-info-buttons > button > i {
+  font-size: 30px;
+  color: #ac2622;
+}
+header > section > .footer-info-buttons-active {
+  display: flex !important;
+}
 
+@media screen and (max-width: 992px) {
   header .desktop-nav {
     display: none;
   }
@@ -576,7 +605,6 @@ header {
   }
 
   .slider-bootstrap-content > .container {
-
   }
 
   .slider-bootstrap-content > .container > h2 {
