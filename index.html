@@ -25,6 +25,11 @@
         const element = document.querySelector(".header-navigation-nav");
         element.classList.toggle("header-navigation-nav-hide");
       }
+
+      function handleContactBar() {
+        const element = document.querySelector(".footer-info-buttons-bar");
+        element.classList.toggle("footer-info-buttons-active");
+      }
     </script>
   </head>
   <body>
@@ -51,8 +56,24 @@
           <a href="./" onclick="handleNavBar()">ANASAYFA</a>
           <a href="#hakkimizda" onclick="handleNavBar()">HAKKIMIZDA</a>
           <a href="#hizmetler" onclick="handleNavBar()">HİZMETLER</a>
-          <a href="#iletisim" onclick="handleNavBar()">İLETİŞİM</a>
+          <a href="#" onclick="handleContactBar()">İLETİŞİM</a>
         </nav>
+
+        <section class="footer-info-buttons footer-info-buttons-bar">
+          <button onclick="handleContactBar()"><i class="fa-solid fa-xmark"></i></button>
+
+          <a href="mailto:eftesisat@hotmail.com">
+            <h6><i class="fa-solid fa-envelope"></i> Mail Adresi</h6>
+
+            eftesisat@hotmail.com
+          </a>
+
+          <a href="https://wa.me/905379281440?text=Merhaba, sıhhi tesisat için hizmet almak istiyorum. Görüşebilir miyiz?" target="_blank">
+            <h6><i class="fa-solid fa-mobile"></i> Servis Hattı (GSM)</h6>
+
+            +90 537 928 14 40
+          </a>
+        </section>
       </section>
     </header>
 
@@ -72,14 +93,13 @@
                 <div class="container">
                   <h2>Profesyonel Sıhhi Tesisat Hizmetleri</h2>
                   <p></p>
-
                 </div>
               </div>
             </div>
 
             <div
               class="carousel-item"
-              style="background-image: url('./assets/images/services/service-1.webp')"
+              style="background-image: url('./assets/images/banner-2.png')"
             >
               <div class="slider-bootstrap-content">
                 <div class="container">
@@ -87,7 +107,6 @@
                   <p>
 
                   </p>
-
                 </div>
               </div>
             </div>
@@ -102,7 +121,6 @@
                   <p>
 
                   </p>
-
                 </div>
               </div>
             </div>
@@ -117,7 +135,6 @@
                   <p>
 
                   </p>
-
                 </div>
               </div>
             </div>
@@ -132,7 +149,6 @@
                   <p>
 
                   </p>
-
                 </div>
               </div>
             </div>
@@ -147,7 +163,6 @@
                   <p>
 
                   </p>
-
                 </div>
               </div>
             </div>
