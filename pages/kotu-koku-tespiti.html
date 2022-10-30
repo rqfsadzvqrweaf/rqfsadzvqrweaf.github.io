@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EF Tesisat - Sıhhi Tesisat</title>
+
+    <link rel="stylesheet" href="../assets/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e13345009d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script>
+      function handleNavBar() {
+        const element = document.querySelector(".header-navigation-nav");
+        element.classList.toggle("header-navigation-nav-hide");
+      }
+
+      function handleContactBar() {
+        const element = document.querySelector(".footer-info-buttons-bar");
+        element.classList.toggle("footer-info-buttons-active");
+      }
+    </script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <header>
+      <section class="container">
+        <img src="" alt="" />
+
+        <nav class="desktop-nav">
+          <a href="./" class="active">ANASAYFA</a>
+          <a href="#hakkimizda" target="_blank">HAKKIMIZDA</a>
+          <a href="#hizmetler" target="_blank">HİZMETLER</a>
+          <a href="#" onclick="handleContactBar()">İLETİŞİM</a>
+        </nav>
+
+        <button class="mobile-nav-button" onclick="handleNavBar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="header-navigation-nav">
+          <a href="./" onclick="handleNavBar()">ANASAYFA</a>
+          <a href="#hakkimizda" onclick="handleNavBar()">HAKKIMIZDA</a>
+          <a href="#hizmetler" onclick="handleNavBar()">HİZMETLER</a>
+          <a href="#" onclick="handleContactBar()">İLETİŞİM</a>
+        </nav>
+
+        <section class="footer-info-buttons footer-info-buttons-bar">
+          <button onclick="handleContactBar()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <a href="mailto:eftesisat@hotmail.com">
+            <h6><i class="fa-solid fa-envelope"></i> Mail Adresi</h6>
+
+            eftesisat@hotmail.com
+          </a>
+
+          <a href="tel:+905379281440" target="_blank">
+            <h6><i class="fa-solid fa-mobile"></i> Servis Hattı (GSM)</h6>
+
+            +90 537 928 14 40
+          </a>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <section class="image-banner">
+        <section class="image-banner-content">
+          <section class="container">
+            <h4>
+              Her koşulda siz değerli müşterilerimize hizmet vermek için hazırda
+              bekliyoruz.
+            </h4>
+
+            <h3>EF Tesisat - Sıhhi Tesisat</h3>
+
+            <a href="tel:+905379281440" target="_blank">HEMEN ARAYIN</a>
+          </section>
+        </section>
+      </section>
+
+      <section class="services" id="hizmetler">
+        <section class="container">
+          <h3>Kötü Koku Tespiti</h3>
+          <p>
+            Dayanılmaz hale gelen kötü kokuları ortadan kaldırmak için
+            teknolojik çözümler sunuyoruz.
+          </p>
+
+          <section class="detail-page-service">
+            detail-page-service
+
+            <p>yazı</p>
+
+            <img src="../assets/images/test.jpg" alt="" />
+
+            <h5>Alt Başlık</h5>
+
+            <p>Yazı</p>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer" id="iletisim">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49055.42276920116!2d32.8048745!3d39.785365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34186cd4d979f%3A0x147a11a34ac6b5b8!2zR8O2bGJhxZ_EsSwgQW5rYXJh!5e0!3m2!1str!2str!4v1665420916323!5m2!1str!2str"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="maps"
+      ></iframe>
+
+      <section class="container footer-info">
+        <section class="footer-info-buttons">
+          <a href="mailto:eftesisat@hotmail.com">
+            <h6><i class="fa-solid fa-envelope"></i> Mail Adresi</h6>
+
+            eftesisat@hotmail.com
+          </a>
+
+          <a href="tel:+905379281440" target="_blank">
+            <h6><i class="fa-solid fa-mobile"></i> Servis Hattı (GSM)</h6>
+
+            +90 537 928 14 40
+          </a>
+        </section>
+      </section>
+
+      <section class="footer-bottom">
+        Copyright © 2022 <a href="">EF Tesisat</a>. All Rights Reserved
+      </section>
+    </footer>
+
+    <a
+      href="https://wa.me/905379281440?text=Merhaba, sıhhi tesisat için hizmet almak istiyorum. Görüşebilir miyiz?"
+      target="_blank"
+      class="whatsapp-icon"
+    >
+      <img src="../assets/images/whatsapp.png" alt="Whatsapp" />
+    </a>
+  </body>
+</html>
